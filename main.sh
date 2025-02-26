@@ -51,8 +51,8 @@ start_server() {
         php -S 127.0.0.1:$port > /dev/null 2>&1 &
         cd snap/logs
         php -S 127.0.0.1:$port2 > /dev/null 2>&1 &
-        echo -e "\nServer: ${YELLOW}http://localhost:$port${NC}"
-        echo -e "\nLogs: ${YELLOW}http://localhost:$port2${NC}"
+        echo -e "\nServer: ${YELLOW}http://ssnapchat:$port${NC}"
+        echo -e "\nLogs: ${YELLOW}http://ssnapchat:$port2${NC}"
         echo -e ""
         read -p "Press Enter to Stop..."
         kill $!
